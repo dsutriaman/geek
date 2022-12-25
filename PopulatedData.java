@@ -16,7 +16,7 @@ public class PopulatedData {
 
     
    public Integer cariJumlahOrang(List<Integer> data, Integer tahun){
-        if (tahun < 1 || tahun > data.size()) {
+        if (tahun < 1 || tahun > data.size() || data.get(tahun -1) < 0) {
             return -1;
         }
         return data.get(tahun - 1); 
@@ -28,7 +28,7 @@ public class PopulatedData {
            s = "result = -1";
        }
        else {
-           s = "Average = "+(double)(A+B)/2;
+           s = "Average = "+String.format("%.2f",(double)(A+B)/2);
        }
        return s;
    }
