@@ -14,7 +14,6 @@ public class geek2 {
         List<Integer> mapData = populatedData.algorithm.init(100);
         Integer personA = populatedData.cariJumlahOrang(mapData, 2);
         Integer personB = populatedData.cariJumlahOrang(mapData, 10);
-        System.out.println("personB = " + personB);
         System.out.println(populatedData.Avg(personA, personB));
     }   
 }
